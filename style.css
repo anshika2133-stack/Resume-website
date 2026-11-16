@@ -1,0 +1,328 @@
+
+/* =========================================
+   ANSH'S PORTFOLIO
+   Midnight Blue | Elegant | Editorial
+========================================= */
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 35px 7%;
+    background-color: #F5F3ED;
+    color: #303B47;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.8;
+}
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 18px 10px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #D8DDE1;
+}
+
+nav a {
+    color: #24364B;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #7892AA;
+}
+
+/* INTRODUCTION */
+
+.intro {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(125deg, #24364B, #354D65);
+    padding: 75px 65px 30px;
+    margin-bottom: 35px;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(36, 54, 75, 0.14);
+}
+
+.intro-content {
+    position: relative;
+    z-index: 2;
+    max-width: 650px;
+}
+
+.tagline {
+    color: #D5C19E;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.intro h1 {
+    color: #F9F7F1;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(48px, 7vw, 76px);
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 22px 0;
+}
+
+.name-highlight {
+    color: #C5D4E1;
+    font-style: italic;
+}
+
+.intro-text {
+    color: #E2E8ED;
+    font-size: 17px;
+    max-width: 500px;
+}
+
+.welcome-note {
+    color: #D5C19E;
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+}
+
+/* DECORATIVE DETAILS */
+
+.intro-decoration {
+    position: absolute;
+    color: #D5C19E;
+    opacity: 0.35;
+    transition: transform 0.5s ease;
+}
+
+.decoration-one {
+    font-size: 85px;
+    right: 12%;
+    top: 12%;
+}
+
+.decoration-two {
+    font-size: 65px;
+    right: 25%;
+    bottom: 22%;
+    color: #B7C6D5;
+}
+
+.decoration-three {
+    font-size: 55px;
+    right: 9%;
+    bottom: 20%;
+}
+
+.intro:hover .decoration-one {
+    transform: rotate(25deg);
+}
+
+.intro:hover .decoration-two {
+    transform: scale(1.12);
+}
+
+/* INTRO BUTTON */
+
+.explore-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #D5C19E;
+    color: #24364B;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding: 13px 22px;
+    margin-top: 18px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #F9F7F1;
+    transform: translateY(-3px);
+}
+
+/* INTRO FOOTER STRIP */
+
+.intro-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    margin-top: 55px;
+    padding-top: 18px;
+    color: #D5C19E;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+/* INTERESTS STRIP */
+
+.interests-strip {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 35px 0 55px;
+}
+
+.interests-strip span {
+    background-color: #E5EAF0;
+    color: #344D65;
+    padding: 9px 17px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.interests-strip span:hover {
+    background-color: #D1DCE7;
+    transform: translateY(-3px);
+}
+
+/* CONTENT CARDS */
+
+.card {
+    background-color: #FFFEFA;
+    padding: 40px 45px;
+    margin-bottom: 28px;
+    border: 1px solid #E1E3E3;
+    border-left: 4px solid #7892AA;
+    border-radius: 8px;
+    box-shadow: 0 5px 18px rgba(36, 54, 75, 0.04);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(36, 54, 75, 0.08);
+}
+
+.section-label {
+    color: #7892AA;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    margin-bottom: 8px;
+}
+
+.card h2 {
+    color: #24364B;
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 22px;
+}
+
+.card h3 {
+    color: #354D65;
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.card p {
+    color: #56616C;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+/* ACADEMIC HIGHLIGHTS */
+
+.academic-highlights {
+    background-color: #EDF1F4;
+    padding: 20px 25px;
+    margin-top: 25px;
+    border-radius: 7px;
+}
+
+.academic-highlights h3 {
+    margin-top: 0;
+}
+
+/* LISTS */
+
+.card ul {
+    padding-left: 22px;
+}
+
+.card li {
+    padding: 5px 0;
+}
+
+/* HANDWRITTEN NOTE */
+
+.little-note {
+    color: #71869B !important;
+    font-family: 'Caveat', cursive;
+    font-size: 24px !important;
+    margin-top: 25px;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 30px 10px;
+    margin-top: 30px;
+    border-top: 1px solid #D8DDE1;
+    color: #71808D;
+    font-size: 12px;
+}
+
+footer p:first-child {
+    font-family: 'Caveat', cursive;
+    font-size: 22px;
+    color: #354D65;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 650px) {
+    body {
+        padding: 18px 5%;
+    }
+
+    nav {
+        gap: 16px;
+    }
+
+    .intro {
+        padding: 45px 25px 25px;
+    }
+
+    .intro-decoration {
+        opacity: 0.18;
+    }
+
+    .intro-bottom {
+        justify-content: center;
+    }
+
+    .card {
+        padding: 28px 23px;
+    }
+
+    .card h2 {
+        font-size: 27px;
+    }
+}
